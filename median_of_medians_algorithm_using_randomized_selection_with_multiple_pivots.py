@@ -18,7 +18,6 @@ This suggests that the average-running time can be made smaller by making m larg
 But having a large value of m comes incurs a larger cost of comparisons before the appropriate sub-array can be identified for the next round of recursion.  
 This lead us to hypothesize that there is really no practical benefit to using multiple pivots. 
 At least, there will be a point beyond which using more pivots will be more computationally time-consuming over the single-pivot case.  
-This programming assignment is about determining the optimal value of $m$  experimentally.
 
 """
 
@@ -145,7 +144,8 @@ print("Sensitivity of the Slope of the Linear Regressor of the Std-Dev to the #P
 
 
 
-"""# Conclusion:
+"""
+# Conclusion:
 1. Usually, as the number of pivots increases, the cost of computation should go down as a convex function
      i.e. as pivot increases, the cost decreases and then at some point increases again.
 2. In this scenario, we have tried out multiple pivots ranging from 1 to 15.
